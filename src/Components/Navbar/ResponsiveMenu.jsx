@@ -11,7 +11,7 @@ function ResponsiveMenu({isopen}) {
             transition={{duration:0.3}}
             className='absolute top-20 left-0 w-full h-screen z-20 lg:hidden'
             >
-                <div className='text-xl font-semibold uppercase bg-gray-100 text-gray-500 py-10 m-6 rounded-3xl'>
+                <div className='text-xl font-semibold uppercase bg-gray-100 text-gray-700 py-10 m-6 rounded-3xl'>
                     <ul className='flex flex-col justify-center items-center gap-6'>
                         <li>Home</li>
                         <li>About Us</li>

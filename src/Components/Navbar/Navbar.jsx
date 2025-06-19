@@ -8,7 +8,12 @@ function Navbar() {
     const [isopen,setIsopen]=useState(false)
   return (
     <>
-    <nav className='w-full'>
+    <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.5,delay:0.5}}
+        className='w-full'
+    >
         <div className='flex justify-between items-center py-2 px-4 md:px-6 lg:px-8 w-full'>
             {/* {Logo Section} */}
             <div>
@@ -36,7 +41,7 @@ function Navbar() {
             {/* {Testimonials Section} */}
             {/* {Resources Section} */}
             {/* {Contact Us Section} */}
-            <div className='hidden lg:block space-x-6 text-lg'>
+            <div className='hidden lg:block  space-x-6 text-lg'>
                 <button className='font-semibold'>Sign in</button>
                 <button className='text-white bg-blue-600 font-semibold rounded-full px-6 py-2'>Register</button>
             </div>
@@ -44,7 +49,7 @@ function Navbar() {
                 <MenuRoundedIcon className='text-4xl'/>
             </div>
         </div>
-    </nav>
+    </motion.div>
     {/* mobile sidebar section */}
     <ResponsiveMenu isopen={isopen}/>
     </>
