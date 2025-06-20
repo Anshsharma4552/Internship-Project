@@ -6,14 +6,14 @@ function NumberCounter() {
         <div className="container grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className='flex flex-col items-center justify-center'>
                 <p className='text-3xl font-semibold'>
-                    <CountUp start={0} end={898} duration={3} enableScrollSpy={true} scrollSpyOnce={true}/>
+                    <CountUp start={0} end={75000} duration={3} enableScrollSpy={true} scrollSpyOnce={true}/>
                 </p>
-                <p>Expert tutors</p>
+                <p>Happy Learners</p>
             </div>
             <div className='flex flex-col items-center justify-center'>
                 <p className='text-3xl font-semibold'>
                     <CountUp
-                    end={15000}
+                    end={45}
                     separator=','
                     suffix='+'
                     duration={3}
@@ -21,12 +21,12 @@ function NumberCounter() {
                     scrollSpyOnce={true}
                     />
                 </p>
-                <p>Hours Content</p>
+                <p>Trainers</p>
             </div>
             <div className='flex flex-col items-center justify-center'>
                 <p className='text-3xl font-semibold'>
                     <CountUp
-                    end={30}
+                    end={160}
                     separator=','
                     suffix='+'
                     duration={3}
@@ -34,12 +34,12 @@ function NumberCounter() {
                     scrollSpyOnce={true}
                     />
                 </p>
-                <p>Courses</p>
+                <p>Corporate Trainings</p>
             </div>
             <div className='flex flex-col items-center justify-center'>
                 <p className='text-3xl font-semibold'>
                     <CountUp
-                    end={10000}
+                    end={17}
                     separator=','
                     suffix='+'
                     duration={3}
@@ -47,7 +47,7 @@ function NumberCounter() {
                     scrollSpyOnce={true}
                     />
                 </p>
-                <p>Learnes</p>
+                <p>Years of Experience</p>
             </div>
         </div>
     </div>
