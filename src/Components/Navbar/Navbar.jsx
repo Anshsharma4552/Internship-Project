@@ -12,7 +12,7 @@ function Navbar() {
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{duration:0.5,delay:0.5}}
-        className='w-full'
+        className='fixed top-0 w-full z-50 bg-white shadow '
     >
         <div className='flex justify-between items-center py-2 px-4 md:px-6 lg:px-8 w-full'>
             {/* {Logo Section} */}
