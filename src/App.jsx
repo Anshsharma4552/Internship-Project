@@ -4,6 +4,9 @@ import NavbarBanner from './Components/Navbar/NavbarBanner';
 import Hero from './Components/Hero/Hero';
 import NumberCounter from './Components/NumberCounter/NumberCounter';
 import About from './Components/AboutUs/About';
+import Course from './Components/Courses/Course';
+import Testimonials from './Components/Testimonials/Testimonials';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <Hero/>
       <NumberCounter/>
       <About/>
+      <Course/>
+      <Testimonials/>
+      <Footer/>
     </div>
   )
 }
