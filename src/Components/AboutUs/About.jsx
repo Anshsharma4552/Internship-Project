@@ -39,6 +39,8 @@ const AboutUs=[
 ]
 function About() {
   return (
+    <>
+    <section id='about'>
     <div className='bg-[#f9fafc]'>
         <div className="py-24">
             <div className='space-y-4 p-6 text-center max-w-[500px] mx-auto mb-5 '>
@@ -93,6 +95,8 @@ function About() {
         </div>
 
     </div>
+    </section>
+    </>
   )
 }
 

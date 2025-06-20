@@ -7,7 +7,8 @@ import About from './Components/AboutUs/About';
 import Course from './Components/Courses/Course';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Footer from './Components/Footer/Footer';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <div className='overflow-x-hidden'>
