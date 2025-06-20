@@ -3,6 +3,7 @@ import React from 'react'
 function Hero() {
   return (
     <>
+    <section id='home'>
     <div class="relative w-full h-[700px] md:h-[660px] overflow-hidden">
           <img src="src/assets/image copy.png" alt="Training Banner" class="w-full h-full object-cover"></img>
             <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
@@ -22,6 +23,7 @@ function Hero() {
                 </button>
             </div>
     </div>
+    </section>
     </>
   )
 }

@@ -80,6 +80,8 @@ const courses = [
 
 const Course = () => {
   return (
+    <>
+    <section id='courses'>
     <div className="py-12 px-4 md:px-10 bg-white">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Courses</h2>
 
@@ -103,6 +105,8 @@ const Course = () => {
         ))}
       </div>
     </div>
+    </section>
+    </>
   );
 };
 
