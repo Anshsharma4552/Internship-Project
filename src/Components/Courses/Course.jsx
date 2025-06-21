@@ -11,72 +11,72 @@ import ForumIcon from '@mui/icons-material/Forum';
 import MemoryIcon from '@mui/icons-material/Memory';
 import { slideLeft } from '../utility/animation';
 
-
 const courses = [
   {
     id: 1,
-    title: "Advanced Excel & Excel VBA Macros",
-    description: "Master formulas, pivot tables, dashboards, and automate tasks using VBA macros. Perfect for analysts, finance, and operations teams.",
+    title: "Advanced Excel & VBA Macros",
+    description: "Learn Excel formulas, charts, and how to automate tasks using VBA. Great for office and finance jobs.",
     category: "Data & Productivity",
     icon: <BarChartIcon className="text-blue-600" />
   },
   {
     id: 2,
-    title: "SQL & Database Management",
-    description: "Learn SQL queries, joins, subqueries, and database management using MySQL or SQL Server with hands-on corporate scenarios.",
+    title: "SQL & Database Basics",
+    description: "Understand how to use SQL to get data from databases. Practice real examples using MySQL or SQL Server.",
     category: "Data Management",
     icon: <StorageIcon className="text-blue-600" />
   },
   {
     id: 3,
-    title: "Power BI & Tableau Data Analytics",
-    description: "Transform raw data into powerful dashboards and reports using Power BI or Tableau. Learn data modeling, KPIs, and DAX.",
+    title: "Power BI & Tableau",
+    description: "Turn data into reports and dashboards using Power BI or Tableau. Learn to track business performance.",
     category: "Business Intelligence",
     icon: <InsightsIcon className="text-blue-600" />
   },
   {
     id: 4,
-    title: "Web Designing & UI/UX Fundamentals",
-    description: "Learn HTML5, CSS3, JavaScript, responsive design, and user-centered UI/UX to build modern, mobile-friendly websites.",
+    title: "Web Designing & UI/UX",
+    description: "Learn to build modern websites using HTML, CSS, and JavaScript. Understand how to make designs user-friendly.",
     category: "Web Development",
     icon: <LanguageIcon className="text-blue-600" />
   },
   {
     id: 5,
-    title: "Digital Marketing & Google Analytics",
-    description: "Hands-on training in SEO, Google Ads, Facebook Ads, Google Analytics, and lead generation strategies tailored for businesses.",
+    title: "Digital Marketing",
+    description: "Learn SEO, social media ads, Google Analytics, and how to grow business online with marketing tools.",
     category: "Marketing",
     icon: <CampaignIcon className="text-blue-600" />
   },
   {
     id: 6,
-    title: "Python for Data Science & Automation",
-    description: "Get practical experience with Python, NumPy, Pandas, and automation scripts for analytics and workflow efficiency.",
+    title: "Python for Beginners",
+    description: "Start with Python basics and learn how to analyze data and automate daily tasks easily.",
     category: "Programming",
     icon: <PythonIcon className="text-blue-600" />
   },
   {
     id: 7,
-    title: "Business Intelligence & Reporting Tools",
-    description: "Create end-to-end reporting solutions using Power Query, Power Pivot, Excel BI tools, and real-time dashboards.",
+    title: "Business Reports with Excel",
+    description: "Create reports and dashboards using Excel tools like Power Query and Pivot Tables.",
     category: "Data Visualization",
     icon: <QueryStatsIcon className="text-blue-600" />
   },
   {
     id: 8,
-    title: "Corporate Soft Skills & Communication",
-    description: "Develop strong communication, leadership, email etiquette, and teamwork through practical soft skills training.",
+    title: "Soft Skills & Communication",
+    description: "Improve your speaking, writing, teamwork, and leadership skills for the workplace.",
     category: "Professional Development",
     icon: <ForumIcon className="text-blue-600" />
   },
   {
-  id: 9,
-  title: "PHP & Backend Development",
-  description: "Build dynamic and scalable web applications using PHP, MySQL, and backend integration techniques. Ideal for server-side developers and full-stack learners.",
-  category: "Backend Development",
-  icon: <MemoryIcon className="text-blue-600" />
-},
+    id: 9,
+    title: "PHP & Backend Development",
+    description: "Learn to build dynamic websites using PHP and MySQL. Great for backend or full-stack developers.",
+    category: "Backend Development",
+    icon: <MemoryIcon className="text-blue-600" />
+  },
 ];
+
 
 const Course = () => {
   return (

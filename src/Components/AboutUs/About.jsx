@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import BuildIcon from '@mui/icons-material/Build';
 import DevicesIcon from '@mui/icons-material/Devices';
 import AssessmentIcon from '@mui/icons-material/Assessment';
+import { FaYoutube, FaGlobe } from 'react-icons/fa';
 import TuneIcon from '@mui/icons-material/Tune';
 import { slideLeft } from '../utility/animation';
 
@@ -91,6 +92,28 @@ function About() {
             <p className="mt-4 leading-relaxed text-gray-700">
             With over <strong>17 years of experience</strong>, Hirdesh has empowered thousands of professionals and corporate teams in areas like <strong>Excel, VBA, SQL, Power BI, and Digital Analytics</strong>. He's also a published author and a respected voice in corporate upskilling, known for his hands-on, results-driven training approach.
             </p>
+            <div className="mt-6 flex items-center gap-2">
+                <FaYoutube className="text-red-600 text-xl" />
+                <a
+                    href="https://www.youtube.com/@hirdeshbhardwaj"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 font-medium hover:text-blue-400"
+                >
+                    Visit Hirdesh Bhardwaj's YouTube Channel
+                </a>
+                </div>
+                <div className="mt-6 flex items-center gap-2">
+                <FaGlobe className="text-blue-600 text-xl" />
+                <a
+                    href="https://hirdeshbhardwaj.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 font-medium hover:text-blue-400"
+                >
+                    Learn more about Hirdesh Bhardwaj at hirdeshbhardwaj.com
+                </a>
+                </div>
         </div>
         </div>
 
