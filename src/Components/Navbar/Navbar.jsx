@@ -12,7 +12,7 @@ function Navbar() {
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{duration:0.5,delay:0.5}}
-        className='fixed top-0 w-full z-50 bg-white shadow '
+        className=' top-0 w-full z-50 bg-white shadow '
     >
         <div className='flex justify-between items-center py-2 px-4 md:px-6 lg:px-8 w-full'>
             {/* {Logo Section} */}
@@ -41,8 +41,7 @@ function Navbar() {
             {/* {Testimonials Section} */}
             {/* {Resources Section} */}
             {/* {Contact Us Section} */}
-            <div className='hidden lg:block  space-x-6 text-lg'>
-                <button className='font-semibold'>Sign in</button>
+            <div className='hidden lg:block  space-x-3 text-lg text-left'>
                 <button className='text-white bg-blue-600 font-semibold rounded-full px-6 py-2'>Register</button>
             </div>
             <div className='lg:hidden' onClick={()=>setIsopen(!isopen)}>

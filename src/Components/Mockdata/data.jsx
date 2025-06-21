@@ -11,7 +11,7 @@ export const  NavbarMenu=[
     },
     {
         id:3,
-        title: "Courses",
+        title: "Module",
         link:"#courses"
     },
     {
@@ -21,12 +21,17 @@ export const  NavbarMenu=[
     },
     {
         id:5,
-        title: "Resources",
+        title: "Location",
         link:"#"
     },
     {
-        id:6,
-        title: "Contact Us",
+        id:5,
+        title: "Gallery",
         link:"#"
+    },
+    {
+        id:7,
+        title: "Contact Us",
+        link:"#contact"
     },
 ]
