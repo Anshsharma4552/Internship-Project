@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
 
 function Footer() {
   return (
@@ -51,6 +53,24 @@ function Footer() {
         <li><a href="https://www.websjyoti.com/websjyoti-alumni.php" target="_blank" rel="noopener noreferrer" className="hover:text-white">Our Alumni</a></li>
         <li><a href="https://www.websjyoti.com/career.php" target="_blank" rel="noopener noreferrer" className="hover:text-white">Career at Webs Jyoti</a></li>
       </ul>
+      <div className="pt-6 mt-10 text-right">
+        <h4 className="text-xl font-semibold mb-5 text-white">🌐 Follow Us</h4>
+        <div className="flex justify-end gap-4">
+            <a href="https://www.facebook.com/websjyoti" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF className="text-gray-300 hover:text-white text-xl" />
+            </a>
+            <a href="https://www.youtube.com/@hirdeshbhardwaj" target="_blank" rel="noopener noreferrer">
+            <FaYoutube className="text-gray-300 hover:text-white text-xl" />
+            </a>
+            <a href="https://www.instagram.com/websjyoti" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-gray-300 hover:text-white text-xl" />
+            </a>
+            <a href="https://www.linkedin.com/company/webs-jyoti/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn className="text-gray-300 hover:text-white text-xl" />
+            </a>
+        </div>
+        </div>
+
     </div>
   </div>
   <p className="text-lg mt-4 text-center">
