@@ -15,9 +15,10 @@ function ResponsiveMenu({isopen}) {
                     <ul className='flex flex-col justify-center items-center gap-6'>
                         <li>Home</li>
                         <li>About Us</li>
-                        <li>Courses</li>
+                        <li>Module</li>
                         <li>Testimonials</li>
-                        <li>Resources</li>
+                        <li>Locations</li>
+                        <li>Gallery</li>
                         <li>Contact Us</li>
                     </ul>
                 </div>
