@@ -78,7 +78,7 @@ function About() {
         <div className="flex flex-col md:flex-row items-center gap-8 px-6 md:px-16 py-10 bg-gray-100 rounded-lg shadow-md" data-aos="fade-up">
 
         <div className="w-full md:w-1/3 flex justify-center">
-            <img src="src/assets/image copy 2.png" alt="Hirdesh Bhardwaj" className="rounded-xl shadow-lg w-64 h-64 object-cover" />
+            <img src="/image copy 2.png" alt="Hirdesh Bhardwaj" className="rounded-xl shadow-lg w-64 h-64 object-cover" />
         </div>
 
         <div className="w-full md:w-2/3 text-gray-800">
