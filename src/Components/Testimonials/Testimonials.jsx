@@ -6,35 +6,35 @@ const testimonialsData = [
     id: 1,
     name: "Seema Prem (Co‑Founder, FIA Global)",
     text: "Hirdesh conducted a number of advanced Excel trainings for FIA. He explains concepts very simply, ensuring that we improve the way we use Excel.",
-    img: "src/assets/image copy 3.png",
+    img: "/image copy 3.png",
     delay: 0.2
   },
   {
     id: 2,
     name: "Serigne Ndiaye (Sr Business Consultant)",
     text: "I highly recommend Mr. Hirdesh Bhardwaj. He possesses key skills in management and data analytics that are valuable for any business environment.",
-    img: "src/assets/image copy 4.png", 
+    img: "/image copy 4.png", 
     delay: 0.2
   },
   {
     id: 3,
     name: "Roni Jeffy Salomo (BD Enthusiast)",
     text: "Very passionate and enthusiastic trainer in SQL and Data Science. His contribution to several books is unforgettable and truly commendable.",
-    img: "src/assets/image copy 5.png", 
+    img: "/image copy 5.png", 
     delay: 0.2
   },
   {
   id: 4,
   name: "Neha Arora (Training Coordinator, Axis Bank)",
   text: "Hirdesh is an exceptional trainer who makes even the most complex tools like VBA and Power BI easy to understand. The feedback from our employees has been outstanding.",
-  img: "src/assets/image copy 6.png", // Replace with actual image or placeholder
+  img: "/image copy 6.png", // Replace with actual image or placeholder
   delay: 0.5
 },
 {
   id: 5,
   name: "Amit Sharma (Team Lead, Infosys)",
   text: "We appreciated the structured and real-world focused sessions by Hirdesh. His practical examples and hands-on approach truly set the training apart.",
-  img: "src/assets/image copy 7.png", // Replace with actual image or placeholder
+  img: "/image copy 7.png", // Replace with actual image or placeholder
   delay: 0.5
 }
 ];

@@ -5,7 +5,7 @@ function Hero() {
     <>
     <section id='home'>
     <div class="relative w-full h-[700px] md:h-[660px] overflow-hidden">
-          <img src="src/assets/image copy.png" alt="Training Banner" class="w-full h-full object-cover"></img>
+          <img src="/image copy.png" alt="Training Banner" class="w-full h-full object-cover"></img>
             <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
                 <h1 class="text-white text-3xl md:text-5xl font-bold drop-shadow-lg m-5">
                 Professional Corporate Training

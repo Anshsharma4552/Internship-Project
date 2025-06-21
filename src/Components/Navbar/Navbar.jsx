@@ -17,7 +17,7 @@ function Navbar() {
         <div className='flex justify-between items-center py-2 px-4 md:px-6 lg:px-8 w-full'>
             {/* {Logo Section} */}
             <div>
-                <img src='src/assets/image.png' alt='Logo' className="h-25 w-auto object-contain m-2"/>
+                <img src='/image.png' alt='Logo' className="h-25 w-auto object-contain m-2"/>
             </div>
             {/* {Home Section} */}
             <div className='hidden lg:block'>
