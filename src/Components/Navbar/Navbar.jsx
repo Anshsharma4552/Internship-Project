@@ -11,10 +11,10 @@ function Navbar() {
   const navigate = useNavigate();
 
   const handleNavigation = (link) => {
-    if (link === '/locations') {
-      navigate('/locations');
+    if (link === '/locations' || link === '/gallery') {
+      navigate(link); // Navigate to these full-page routes
     } else if (location.pathname !== '/') {
-      window.location.href = link;
+      window.location.href = link; // For anchor links on other pages
     } else {
       if (link.startsWith('#')) {
         const element = document.querySelector(link);
@@ -46,16 +46,16 @@ function Navbar() {
             <ul className='flex items-center gap-6'>
               {NavbarMenu.map((item) => (
                 <li key={item.id}>
-                  {item.title === 'Home' ? (
+                  {(item.link === '/' || item.title === 'Home') ? (
                     <Link
                       to="/"
                       className='inline-block text-base xl:text-lg py-1 px-2 xl:px-3 text-gray-600 hover:text-blue-600 transition-all duration-300 font-semibold'
                     >
                       {item.title}
                     </Link>
-                  ) : item.link === '/locations' ? (
+                  ) : (item.link === '/locations' || item.link === '/gallery') ? (
                     <Link
-                      to="/locations"
+                      to={item.link}
                       className='inline-block text-base xl:text-lg py-1 px-2 xl:px-3 text-gray-600 hover:text-blue-600 transition-all duration-300 font-semibold'
                     >
                       {item.title}
