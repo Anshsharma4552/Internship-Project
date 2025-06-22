@@ -140,7 +140,7 @@ function CorporateTrainingForm() {
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-800 px-8 py-6">
           <h1 className="text-3xl font-bold text-white text-center">
-            Corporate Training Registration
+            Registration Form
           </h1>
           <p className="text-blue-100 text-center mt-2">
             Join WebsJyoti's Professional Development Programs
