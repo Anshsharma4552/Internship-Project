@@ -21,13 +21,13 @@ export const  NavbarMenu=[
     },
     {
         id:5,
-        title: "Location",
-        link:"#"
+        title: "Locations",
+        link:"/locations"
     },
     {
         id:5,
         title: "Gallery",
-        link:"#"
+        link:"/gallery"
     },
     {
         id:7,
