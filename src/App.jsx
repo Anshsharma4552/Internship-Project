@@ -19,9 +19,7 @@ function Home() {
   const location = useLocation();
 
   useEffect(() => {
-    // Check if there's a hash in the URL when component mounts
     if (location.hash) {
-      // Wait a bit for the page to render
       setTimeout(() => {
         const element = document.querySelector(location.hash);
         if (element) {
@@ -29,7 +27,6 @@ function Home() {
         }
       }, 300);
     } else {
-      // If no hash, scroll to top
       window.scrollTo(0, 0);
     }
   }, [location]);
@@ -51,7 +48,6 @@ function AppContent() {
   const location = useLocation();
 
   useEffect(() => {
-    // Scroll to top when route changes (except when there's a hash)
     if (!location.hash) {
       window.scrollTo(0, 0);
     }
