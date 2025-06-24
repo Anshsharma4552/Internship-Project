@@ -9,6 +9,7 @@ import PythonIcon from '@mui/icons-material/Code'; // Python-specific icon not i
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import ForumIcon from '@mui/icons-material/Forum';
 import MemoryIcon from '@mui/icons-material/Memory';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { slideLeft } from '../utility/animation';
 
 const courses = [
@@ -17,68 +18,80 @@ const courses = [
     title: "Advanced Excel & VBA Macros",
     description: "Learn Excel formulas, charts, and how to automate tasks using VBA. Great for office and finance jobs.",
     category: "Data & Productivity",
-    icon: <BarChartIcon className="text-blue-600" />
+    icon: <BarChartIcon className="text-blue-600" />,
+    readMoreUrl: "https://www.websjyoti.com/excel_training.php"
   },
   {
     id: 2,
     title: "SQL & Database Basics",
     description: "Understand how to use SQL to get data from databases. Practice real examples using MySQL or SQL Server.",
     category: "Data Management",
-    icon: <StorageIcon className="text-blue-600" />
+    icon: <StorageIcon className="text-blue-600" />,
+    readMoreUrl: "https://www.websjyoti.com/sql_training.php"
   },
   {
     id: 3,
-    title: "Power BI & Tableau",
-    description: "Turn data into reports and dashboards using Power BI or Tableau. Learn to track business performance.",
-    category: "Business Intelligence",
-    icon: <InsightsIcon className="text-blue-600" />
+  title: "ChatGPT & OpenAI Tools",
+  description: "Explore how to use ChatGPT, build AI-driven apps with OpenAI APIs, and automate tasks using advanced language models.",
+  category: "Artificial Intelligence",
+  icon: <InsightsIcon className="text-blue-600" />,
+  readMoreUrl: "https://www.websjyoti.com/chatgpt_training.php"
   },
   {
     id: 4,
     title: "Web Designing & UI/UX",
     description: "Learn to build modern websites using HTML, CSS, and JavaScript. Understand how to make designs user-friendly.",
     category: "Web Development",
-    icon: <LanguageIcon className="text-blue-600" />
+    icon: <LanguageIcon className="text-blue-600" />,
+    readMoreUrl: "https://www.websjyoti.com/design_training.php"
   },
   {
     id: 5,
     title: "Digital Marketing",
     description: "Learn SEO, social media ads, Google Analytics, and how to grow business online with marketing tools.",
     category: "Marketing",
-    icon: <CampaignIcon className="text-blue-600" />
+    icon: <CampaignIcon className="text-blue-600" />,
+    readMoreUrl: "https://www.websjyoti.com/seo_training.php"
   },
   {
     id: 6,
-    title: "Python for Beginners",
-    description: "Start with Python basics and learn how to analyze data and automate daily tasks easily.",
-    category: "Programming",
-    icon: <PythonIcon className="text-blue-600" />
+  title: "Java & J2EE",
+  description: "Learn core Java concepts, object-oriented programming, and build enterprise applications using J2EE technologies.",
+  category: "Programming",
+  icon: <MemoryIcon className="text-blue-600" />,
+  readMoreUrl: "https://www.websjyoti.com/java_training.php"
   },
   {
     id: 7,
     title: "Business Reports with Excel",
     description: "Create reports and dashboards using Excel tools like Power Query and Pivot Tables.",
     category: "Data Visualization",
-    icon: <QueryStatsIcon className="text-blue-600" />
+    icon: <QueryStatsIcon className="text-blue-600" />,
+    readMoreUrl: "https://www.websjyoti.com/excel_training.php"
   },
   {
     id: 8,
     title: "Soft Skills & Communication",
     description: "Improve your speaking, writing, teamwork, and leadership skills for the workplace.",
     category: "Professional Development",
-    icon: <ForumIcon className="text-blue-600" />
+    icon: <ForumIcon className="text-blue-600" />,
+    readMoreUrl: "https://websjyoti.com/soft-skills-communication"
   },
   {
     id: 9,
     title: "PHP & Backend Development",
     description: "Learn to build dynamic websites using PHP and MySQL. Great for backend or full-stack developers.",
     category: "Backend Development",
-    icon: <MemoryIcon className="text-blue-600" />
+    icon: <MemoryIcon className="text-blue-600" />,
+    readMoreUrl: "https://www.websjyoti.com/php_training.php"
   },
 ];
 
-
 const Course = () => {
+  const handleReadMore = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <>
     <section id='courses'>
@@ -98,9 +111,18 @@ const Course = () => {
               <h3 className="text-lg font-semibold text-gray-800">{course.title}</h3>
             </div>
             <p className="text-gray-600 mb-4">{course.description}</p>
-            <span className="inline-block bg-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
-              {course.category}
-            </span>
+            <div className="flex items-center justify-between">
+              <span className="inline-block bg-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                {course.category}
+              </span>
+              <button
+                onClick={() => handleReadMore(course.readMoreUrl)}
+                className="flex items-center space-x-1 text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors duration-300 group"
+              >
+                <span>Read More</span>
+                <ArrowForwardIcon className="text-sm group-hover:translate-x-1 transition-transform duration-300" />
+              </button>
+            </div>
           </motion.div>
         ))}
       </div>

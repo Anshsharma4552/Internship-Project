@@ -6,7 +6,7 @@ function Hero() {
     <section id='home'>
     <div className="relative w-full h-screen overflow-hidden">
   <img
-    src="/image copy.png" 
+    src="/image copy 31.png" 
     alt="Corporate Training"
     className="absolute inset-0 w-full h-full object-cover filter  blur-xs brightness-100"
   />
