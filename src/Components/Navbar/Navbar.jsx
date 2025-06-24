@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavbarMenu } from '../Mockdata/data';
 import { motion } from 'framer-motion';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import DownloadIcon from '@mui/icons-material/Download';
 import ResponsiveMenu from './ResponsiveMenu';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
@@ -13,16 +14,33 @@ function Navbar() {
   const handleNavigation = (link) => {
     if (link === '/locations' || link === '/gallery') {
       navigate(link); // Navigate to these full-page routes
-    } else if (location.pathname !== '/') {
-      window.location.href = link; // For anchor links on other pages
-    } else {
-      if (link.startsWith('#')) {
+    } else if (link.startsWith('#')) {
+      // If we're not on home page, navigate to home with hash
+      if (location.pathname !== '/') {
+        navigate('/' + link); // This will trigger the useEffect in Home component
+      } else {
+        // If already on home page, just scroll
         const element = document.querySelector(link);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
+        // Update URL with hash
+        window.history.pushState(null, null, link);
       }
+    } else {
+      // For non-anchor links, navigate normally
+      navigate(link);
     }
+  };
+
+  const handleDownloadBrochure = () => {
+    const link = document.createElement('a');
+    link.href = 'https://websjyoti.com/web-designing.pdf';
+    link.download = 'brochure.pdf'; // This suggests a filename for download
+    link.target = '_blank'; // Open in new tab as fallback
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -73,8 +91,18 @@ function Navbar() {
             </ul>
           </div>
 
-          {/* Register Button */}
-          <div className='hidden lg:block space-x-3 text-lg text-left'>
+          {/* Action Buttons */}
+          <div className='hidden lg:flex items-center space-x-3 text-lg'>
+            {/* Download Brochure Button */}
+            <button 
+              onClick={handleDownloadBrochure}
+              className='flex items-center gap-2 text-blue-600 border border-blue-600 font-semibold rounded-full px-4 py-2 hover:bg-blue-600 hover:text-white transition-all duration-300'
+            >
+              <DownloadIcon className='text-lg' />
+              Brochure
+            </button>
+            
+            {/* Register Button */}
             <Link to="/register">
               <button className='text-white bg-blue-600 font-semibold rounded-full px-6 py-2 hover:bg-blue-700 transition-colors duration-300'>
                 Register

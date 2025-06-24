@@ -5,14 +5,11 @@ function Hero() {
     <>
     <section id='home'>
     <div className="relative w-full h-screen overflow-hidden">
-  {/* Blurred Background Image */}
   <img
-    src="/image copy.png" // replace with actual image path
+    src="/image copy.png" 
     alt="Corporate Training"
     className="absolute inset-0 w-full h-full object-cover filter  blur-xs brightness-100"
   />
-
-  {/* Text Content Overlay */}
   <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
     <h1 className="text-4xl md:text-6xl font-bold mb-4">
       Professional Corporate Training
